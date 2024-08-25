@@ -8,6 +8,7 @@ Given("Open Magento Webpage", () => {
 
     cy.visit("/")
 
+    
 })
 
 When("Click on create Account link", () => {
