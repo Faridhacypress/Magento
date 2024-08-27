@@ -23,7 +23,8 @@ And("Enter Firstname and Lastname", () => {
 })
 
 And("Enter Email and Password and retype password", () => {
-    const emailaddress = "faridhaaaf63@gmail.com"
+    const r = (Math.random()+1).toString(36).substring(7)
+    const emailaddress = "fareedha"+r+"@gmail.com"
     const pass = "Fareedha@630"
 
     cy.writeFile("cypress/fixtures/credentials.json", { "Email": emailaddress, "password": pass })
